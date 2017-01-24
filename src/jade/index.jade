@@ -1,0 +1,104 @@
+extends _template
+
+block main
+	// ========== home block =============
+	.page__home-block.mb
+		.container
+			.home-block
+				h1.header
+					| Онлайн регистратура 
+					span Республики Мордовия
+				.home-block__text
+					p.desc На портале Вы можете воспользоваться сервисом «Единая электронная регистратура Республики Мордовия», зарегистрироваться в системе удобным для Вас способом, записаться на прием к врачу через Интернет в медицинские учреждения Республики Мордовия.
+					a(href="#").enroll Записаться на прием к врачу через Интернет
+					p.info
+						i.fa 
+						span Для записи на прием Вы должны быть 
+						a(href="#") зарегистрированы в системе
+				.banner
+					img(src="img/banner-horizontal-home.jpg", alt="")
+	// ========== home block end =========
+
+	// ========== tripple block =============
+	.container.js-equal-height.mb
+		.row
+			.col-md-4
+				.info-block.info-block--bd-blue.how-reg
+					h2.header 
+						i.fo 
+						| Как можно зарегистрироваться
+					ul.ul.ul--check
+						li Непосредственно в регистратуре медицинской организации
+						li По телефону горячей линии <b>22-33-31</b>
+						li <a href="#">По электронной почте</a>
+						li <a href="#">Заполнив форму на сайте MedRM.ru</a>
+						li Через онлайн-консультанта
+					a(href="#").btn.btn--blue-bd Онлайн консультант
+			.col-md-4
+				.info-block.spec-quest
+					h2.header
+						i.fo 
+						| Задайте вопрос специалисту
+					.spec-quest__image
+						img(src="img/doctor1.png", alt="")
+					.ta-center
+						a(href="#").btn.btn--blue Задать вопрос
+			.col-md-4
+				img(src="img/yandex-ad.jpg", alt="").img-responsive
+
+	// ========== tripple block end =========
+	.container.mb
+		.banner
+			img(src="img/banner-2.jpg", alt="")
+	// ========== tripple block =============
+	.container.mb.js-equal-height
+		.row
+			.col-md-6.col-lg-4
+				.info-block__outer-header 
+					h2 Статьи
+					a(href="#").info-block__more Все статьи
+				.info-block
+					.row
+						-for(i=1;i<=3;i++)
+							.col-md-12.col-sm-6: .article-preview
+								a(href="#").article-preview__image
+									img(src="img/article-preview"+i+".jpg", alt="")
+								.article-preview__text
+									a.name(href="#") Как подготовить ребенка к приему стоматолога
+									p.desc Первое посещение стоматолога обязательно должно быть
+			.col-md-6.col-lg-4
+				.info-block__outer-header 
+					h2 Пациентам
+				.info-block.for-pacients
+					.for-pacients__images
+						img(src="img/pacients-img1.png", alt="")
+						img(src="img/pacients-img2.png", alt="")
+						img(src="img/pacients-img3.png", alt="")
+					.for-pacients__reference
+						p.header Историческая справка по реализации услуги по приему заявок (записи) на прием к врачу через интернет в республики мордовия
+						p.desc была разработана по заказу Министерства здравоохранения Республики Мордовия в рамках республиканской целевой программы «Формирование информационного общества в Республике Мордовия в период до 2015 года» и действует с декабря 2010 года. 
+						a(href="#").more
+							i.fa 
+							span Читать далее
+			.col-md-12.col-lg-4
+				.info-block__outer-header 
+					h2 Новости
+					a(href="#").info-block__more Архив
+				.info-block
+					-for(i=0;i<6;i++)
+						.news-preview
+							p.date 30.03.2016
+							p.desc Уважаемые пользователи. В результате сбоя в системе возможны накладки в электронном расписании. Просим отнестись с пониманием
+	// ========== tripple block end =========
+	.container.mb
+		.banner
+			img(src="img/yandex-big.jpg", alt="")
+	.container
+		.row
+			.col-md-4
+				img(src="img/yandex-small.jpg", alt="").img-responsive
+			.col-md-4
+				<div id="vk_groups"></div>
+			.col-md-4
+				<div id="ok_group_widget"></div>
+

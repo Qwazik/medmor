@@ -1,0 +1,55 @@
+extends _template
+
+block main
+	.container
+		// ==============  banner ==============
+		.banner
+			img(src="img/banner-horizontal.jpg", alt="")
+		// ============ banner end =============
+		include includes/breadcrumbs
+	main.page__main.mb
+		.container
+			.row
+				.col-md-8
+					.info-block.article-body
+						-for(i=1;i<=3;i++)
+							.row.clearfix.mb
+								.col-md-6
+									.article-preview
+										a(href="#").article-preview__image
+											img(src="img/article-preview"+i+".jpg", alt="")
+										.article-preview__text
+											a.name(href="#") Как подготовить ребенка к приему стоматолога
+											p.desc Первое посещение стоматолога обязательно должно быть
+								.col-md-6
+									.article-preview
+										a(href="#").article-preview__image
+											img(src="img/article-preview"+i+".jpg", alt="")
+										.article-preview__text
+											a.name(href="#") Как подготовить ребенка к приему стоматолога
+											p.desc Первое посещение стоматолога обязательно должно быть
+				.col-md-4
+					.info-block.info-block--bd-blue.mb
+						ul.right-nav
+							li: a(href="#")
+								i.fo 
+								span Задайте вопрос специалисту
+							li: a(href="#")
+								i.fo 
+								span Мониторинг времени ожидания приема врача
+					.ta-center
+						img(src="img/reklama-koHb.jpg", alt="").mb
+						img(src="img/google-da-right.jpg", alt="")
+						p Поделиться с друзьями
+						.ya-share2(data-services="vkontakte,facebook,odnoklassniki,moimir,gplus,twitter,lj" data-size="s")
+	.container.mb
+		.banner
+			img(src="img/yandex-big.jpg", alt="")
+	.container
+		.row
+			.col-md-4
+				img(src="img/yandex-small.jpg", alt="").img-responsive
+			.col-md-4
+				<div id="vk_groups"></div>
+			.col-md-4
+				<div id="ok_group_widget"></div>

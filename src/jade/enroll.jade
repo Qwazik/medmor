@@ -1,0 +1,58 @@
+extends _template
+
+block main
+	.container
+		// ==============  banner ==============
+		.banner
+			img(src="img/banner-horizontal.jpg", alt="")
+		// ============ banner end =============
+		include includes/breadcrumbs
+	main.page__main.mb
+		.container
+			.main-header
+				h1 Записаться на прием к врачу
+			.row
+				.col-md-8
+					.info-block.article-body.mb
+						ul.ul.ul--enroll.ul--col2
+							li: a(href="#") Городской округ Саранск
+							li: a(href="#") Ардатовский район
+							li: a(href="#") Атюрьевский район
+							li: a(href="#") Атяшевский район
+							li: a(href="#") Б.-Березниковский район
+							li: a(href="#") Б.-Игнатовский район
+							li: a(href="#") Дубенский район
+							li: a(href="#") Ельниковский район
+							li: a(href="#") Зубово-Полянский район
+							li: a(href="#") Инсарский район
+							li: a(href="#") Ичалковский район
+							li: a(href="#") Кадошкинский район
+							li: a(href="#") Ковылкинский район
+							li: a(href="#") Кочкуровский район
+							li: a(href="#") Краснослободский район
+							li: a(href="#") Лямбирский район
+							li: a(href="#") Ромодановский район
+							li: a(href="#") Рузаевский район
+							li: a(href="#") Старошайговский район
+							li: a(href="#") Темниковский район
+							li: a(href="#") Теньгушевский район
+							li: a(href="#") Торбеевский район
+							li: a(href="#") Чамзинский район
+					.row.clearfix
+						.col-md-6
+							<div id="vk_groups"></div>
+						.col-md-6
+							<div id="ok_group_widget"></div>
+							
+				.col-md-4
+					.info-block.info-block--bd-blue.mb
+						ul.right-nav
+							li: a(href="#")
+								i.fo 
+								span Задайте вопрос специалисту
+							li: a(href="#")
+								i.fo 
+								span Мониторинг времени ожидания приема врача
+					.ta-center
+						img(src="img/reklama-koHb.jpg", alt="").mb
+						img(src="img/google-da-right.jpg", alt="")
